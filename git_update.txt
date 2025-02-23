@@ -1,0 +1,10 @@
+
+
+git init
+git remote add origin https://github.com/parswork/dore1.git
+git remote set-url origin git@github.com:parswork/dore1.git
+git branch
+git checkout -b master
+git commit -m "update git"
+git push origin master
+
