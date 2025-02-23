@@ -1,0 +1,78 @@
+---------------------  config git for github for django project
+
+#---------------- connecting github
+git config --global user.name "parswork"
+git config --global user.email "hassan.ele.ghabel@gmail.com"
+
+
+#------------------create django project
+
+django-admin startproject your_project_name
+cd your_project_name
+
+#--------------------------  step1
+git init   
+
+#-------------------------- step 2
+git add .
+
+
+#------------------------------step3
+copy in file .gitignore
+
+__pycache__/
+*.pyc
+db.sqlite3
+.env
+
+#-------------------------- step 3
+
+git commit -m "Initial commit"
+
+#-------------------------- step 4
+git remote add origin https://github.com/parswork/dore1.git
+#--------------------------  step 5
+
+git push -u origin master
+#------------------ error token 
+
+$ssh-keygen -t rsa -b 4096 -C "hassan.ele.ghabel@gmail.com"
+$eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+
+
+$cat ~/.ssh/id_rsa.pub========================> copy key
+----------------------- copy token to page github
+https://github.com/settings/keys    ------------> new ssh copy 
+
+------------------------------------------------
+git remote set-url origin git@github.com:parswork/dore1.git
+------------------------------------------------
+git push -u origin master
+------------------------------------------------
+
+solotion solved problam
+--------------------------- upload file django  project in github
+
+
+
+===========================> update code github
+cd path/to/your/repository
+git status
+# Make your changes...
+git add .
+git commit -m "Your commit message here"
+git pull origin master  # Optional
+git push origin master
+
+
+
+
+
+
+
+
+
+
+
+
